@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Basketball-scoreCard</title>
-        <link rel="stylesheet" href="styles2.css">
-    </head>
-    <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
-                <div class="score">
-                    <p id="score-h"></p>
-                </div>
-                
-                <button id="incr-h" class="incr" onclick="incrementH">INCREMENT</button>
-                <button id="save-h" class="save" onclick="saveH">SAVE</button>
-                <p id="save-el">Previous Score:</p>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-scoreCard</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h3>HOME</h3>
+            <div class="score">
+                <h2 id="score-h">0</h2>
             </div>
-            <div>
-                <h3>GUEST</h3>
-                <div class="score">
-                    <p id="score-g"></p>
-                </div>
-               
-                <button id="incr-g" class="incr">INCREMENT</button>
-                <button id="save-g" class="save">SAVE</button>
-                <p id="save-el">Previous Score:</p>
+
+            <button id="incr-h" onclick="incrementH()">INCREMENT</button>
+            <button id="save-h" onclick="saveH()">SAVE</button>
+            <p id="save-el">Previous Score:</p>
+        </div>
+        <div>
+            <h3>GUEST</h3>
+            <div class="score">
+                <h2 id="score-g">0</h2>
             </div>
+
+            <button id="incr-g" onclick="incrementG()">INCREMENT</button>
+            <button id="save-g"  onclick="saveG()">SAVE</button>
+            <p id="save-el">Previous Score:</p>
         </div>
         <script src="index2.js"></script>
-    </body>
+    </div>
+    
+</body>
+
 </html>
